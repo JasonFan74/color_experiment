@@ -19,13 +19,13 @@
     <div class="container">
       <h3> Introduction </h3>
       <p>
-        The purpose of this study was to investigate the CIE LAB space and see how the metric for just noticable difference affects how quickly humans notice differences. We are trying to see if there is a point at which just noticeable differences (JND) or the euclidean distance between colors in the CIE LAB space simply do not matter anymore, that JNDs above a certain number or under certain conditions, have no affect on how quickly we recognize color differences. 
+        The purpose of this study was to investigate the CIE LAB space and see how the metric for just noticable difference affects how quickly humans notice the difference. We are trying to see if there is a point at which increasing the just noticeable differences (JND) measured as the euclidean distance between colors in the CIE LAB space simply do not matter anymore, that JNDs above a certain number or under certain conditions, have no affect on how quickly we recognize color differences. 
 
-        In essence, color pallettes optimizaed for maximum JNDs are often awful, when we create color pallettes, how different do we really need make colors in a color pallette?
+        Often, color pallettes tend to optimize for maximum JND, which is difficult with a large number of colors and often result in awful pallettes. When we create color pallettes, how different do we really need make colors in a color pallette? Finding a minimal distance for two colors to be immediately distinguishable provides a baseline justification for generating effective color pallettes. 
       </p>
       <div class="uline"></div>
 
-      <h3> Methodolgy</h3>
+      <h3> Methodology</h3>
         <p>Participants of the study were shown series of images that looked like the following:</p>
         <br>
         <table class='table-bordered' style="width:70%">
@@ -38,7 +38,7 @@
           <td><img src='example.png' width='400' height = '300'></td>
         </tr>
         </table>
-        <p> They would first be presented fig.1 and was instructud to click on the center dot, at which point fig.2 was immediately rendered. Then they were asked to click on the sector that differed in color in fig.2 as fast as possible and we measured the time taken between fig.2 being rendered and the moues click on the sector. We also captured whether or not a participant clicked on the correct sector. </p>
+        <p> Participants would first be presented fig.1 and was instructed to center the cursor center dot and click. Fig.2 would be immediately rendered, which showed 10 sectors, 9 which had the same color, and only 1 with a color different from the rest. Participants were asked to click on the sector that differed in color in fig.2 as fast as possible. We measured the time taken between fig.2 being rendered and the mouse click on the sector. We also captured whether or not a participant clicked on the correct sector. </p>
 
         <p> The first ten rings of colors we showed the participants were controls that looked like the following,<p>
         <table class='table-bordered'>
@@ -46,11 +46,11 @@
         <img src='control.png' width='400' height='300'>
         </td></tr>
         </table>
-        <p> These were used to approximate the fastest time a user can recognize a color difference, and move the mouse cursor over the desired sector and click.</p>
+        <p> These were used to approximate the fastest time a user can recognize a color difference, and move the mouse cursor over the desired sector and click, accounting for learning in our experimental set up.</p>
         <div class="uline"></div>
         <h3> Findings </h3>
         <p>
-        Our study was performed on 18 participants, in total we showed them 1008 sets of images, 143 of which were controls, and 865 of which were not. To reduce the affect of how fast a participant was able move the mouse from the center of the ring, to a sector and click, for each participant, we calculated the ratio between the actual response time per image divided by the fastest response time over the set of images.
+        Our study was performed on 18 participants with a total of 1008 trials, or sets of images, 143 of which were controls, and 865 of which were not. To reduce the affect of how fast a participant was able move the mouse from the center of the ring, to a sector and click, for each participant, we calculated the ratio between the actual response time per image divided by the fastest response time over the set of images.
         </p>
         <p>
         We compared this "Factor change in response time", to the JND of the colors we showed for each trial and obtained the following plot. (Blue points show correct responses, and red points show incorrect responses.)
@@ -71,12 +71,45 @@
       <div class="uline"></div>
       <br>
       <div class="plotdiv" id="cd5d0c92-5b00-4920-bec6-0a950adacb78"></div>
+	  <br>
+	  <p> 
+	  The above graphs split up the earlier scatterplot and made interactive by selecting a box of data points. As stated earlier, incorrect responses start occuring under a JND of 27, and especially under 20.
+	  </p>
       <br>
       <div class="uline"></div>
       <br>
 
       <div class="plotdiv" id="6c3c39e0-74b0-461a-ac33-8c939d2c763a"></div>
-
+	  <br>
+	  <p> 
+	  On the left, we calculated the percent error across all participants for each interval of 3 JNDs. Percent error increases to above 10% on intervals under 9 JNDs, which suggests that participants found it significantly more difficult to distinguish colors. Intervals between 9 and 27 JNDs suggest participants were able to distinguish the different color after some time and effort.
+	  </p>
+	  <br>
+	  <p> 
+	  The graph on the right shows the number of trials given to participants in each interval group.
+	  </p>
+      <br>
+      <div class="uline"></div>
+	  <h3> Conclusion </h3>
+	  <p>
+	  Our findings show that at color differences greater than JNDs of 27, all participants "instantly" distinguished the different sector with little time or effort. There was a consistent level of variation in response times, which confirms our basic hypothesis of a minimum distance to immediately recognize color differences.
+	  </p>
+	  <p>
+      More analysis may be required to determine the difficulty of discerning colors below a JND of 27.
+	  At JNDs between 9 and 27 we see variation in response times, a good number comparable to "instant," and relatively high accuracy, which suggests that discriminating colors in this range required cognitive work for some but not others.
+	  Below a JND of 9, participant showed significant errors in selection, but at most 60% inaccuracy, which is better than random guessing. 
+	  Moreover, some participants were able to select the correct color in reasonable time even under 5 JNDs, though time taken was constistently higher within this range and in general required cognitive work. The range under 27 JND seems to divide into two ranges of "doable" and "near impossible."
+	  Participants tended to recall groups of trials where the different color was not apparent but discernable with some scrutiny, whereas for some trials they were baffled by and exasperated. Our observations suggest that there is a range where some work, but not more than, say, inspecting each sector, is required.
+	  </p>
+      <p>
+      Our results for JNDs below 27 could also be explained by unequal sensitivity of perception to changes in the L, A, or B axes of the CIE LAB color space. 
+      Supposedly the LAB color space is perceptually uniform, while visual perception studies tell us luminance or value is more discernable than hue or value. Variation in time and accuracy on trials with small JNDs could be a result of differences along the L axis being proportionally more discernable than the other axes. Looking at differences for each component, we cannot immediately conclude this in our data.
+      Technical details of the display properties of our experiment machine, as well as environmental lighting might skew the perception of colors for participants.
+      </p>
+      <p>
+      Participants also reported an "optical illusion" affect when colors seemed indistinguishable, where focusing on a sector may cause other sectors to change color in the periphery. 
+      </p>
+      <br>
     </div>
   </div>
 </body>
